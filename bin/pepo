@@ -1,1 +1,10 @@
 #!/usr/bin/env node
+
+var through = require('through'),
+    pepo    = require('../lib/pepo');
+
+process
+  .stdin
+  .pipe(through(pepo.removeColors))
+  .pipe(process.stdout);
+

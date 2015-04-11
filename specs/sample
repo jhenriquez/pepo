@@ -1,0 +1,47 @@
+[33mU[0m[33mU[0m[33mU[0m[33mU[0m[33mU[0m[33mU[0m[33mU[0m[33mU[0m[33mU[0m[33mU[0m[33mU[0m[33mU[0m[33mU[0m[33mU[0m[33mU[0m[33mU[0m[33mU[0m[33mU[0m[33mU[0m[33mU[0m[33mU[0m[33mU[0m[33mU[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m
+
+10 scenarios ([33m5 undefined[0m, [32m5 passed[0m)
+46 steps ([33m23 undefined[0m, [32m23 passed[0m)
+
+[33mYou can implement step definitions for undefined steps with these snippets:[0m
+
+[33mthis.Given(/^I subscribe with "([^"]*)", "([^"]*)" and "([^"]*)"$/, function (arg1, arg2, arg3, callback) {[0m
+[33m  // Write code here that turns the phrase above into concrete actions[0m
+[33m  callback.pending();[0m
+[33m});[0m
+
+[33mthis.Given(/^My account is confirmed$/, function (callback) {[0m
+[33m  // Write code here that turns the phrase above into concrete actions[0m
+[33m  callback.pending();[0m
+[33m});[0m
+
+[33mthis.When(/^I login using "([^"]*)" and "([^"]*)"$/, function (arg1, arg2, callback) {[0m
+[33m  // Write code here that turns the phrase above into concrete actions[0m
+[33m  callback.pending();[0m
+[33m});[0m
+
+[33mthis.Then(/^I should be authenticated$/, function (callback) {[0m
+[33m  // Write code here that turns the phrase above into concrete actions[0m
+[33m  callback.pending();[0m
+[33m});[0m
+
+[33mthis.Given(/^My account is not confirmed$/, function (callback) {[0m
+[33m  // Write code here that turns the phrase above into concrete actions[0m
+[33m  callback.pending();[0m
+[33m});[0m
+
+[33mthis.Then(/^My authentication should be revoked$/, function (callback) {[0m
+[33m  // Write code here that turns the phrase above into concrete actions[0m
+[33m  callback.pending();[0m
+[33m});[0m
+
+[33mthis.Then(/^I should be reminded to confirm my account$/, function (callback) {[0m
+[33m  // Write code here that turns the phrase above into concrete actions[0m
+[33m  callback.pending();[0m
+[33m});[0m
+
+[33mthis.Then(/^I should be warned my username or email is not valid$/, function (callback) {[0m
+[33m  // Write code here that turns the phrase above into concrete actions[0m
+[33m  callback.pending();[0m
+[33m});[0m
+
