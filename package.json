@@ -1,13 +1,21 @@
 {
-  "name": "achromatic",
+  "name": "pepo",
   "version": "0.1.0",
   "description": "A small tool for removing ANSI color characters from the standard input",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha specs/"
   },
-  "author": "",
-  "license": "ISC",
+  "preferGlobal": "true",
+  "directories": {
+    "bin": "./bin"
+  },
+  "author": "Julio Henriquez",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:jhenriquez/pepo.git"
+  },
+  "license": "MIT",
   "dependencies": {
     "through": "^2.3.7"
   }
