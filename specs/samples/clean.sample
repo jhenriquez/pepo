@@ -1,0 +1,47 @@
+UUUUUUUUUUUUUUUUUUUUUUU.......................
+
+10 scenarios (5 undefined, 5 passed)
+46 steps (23 undefined, 23 passed)
+
+You can implement step definitions for undefined steps with these snippets:
+
+this.Given(/^I subscribe with "([^"]*)", "([^"]*)" and "([^"]*)"$/, function (arg1, arg2, arg3, callback) {
+  // Write code here that turns the phrase above into concrete actions
+  callback.pending();
+});
+
+this.Given(/^My account is confirmed$/, function (callback) {
+  // Write code here that turns the phrase above into concrete actions
+  callback.pending();
+});
+
+this.When(/^I login using "([^"]*)" and "([^"]*)"$/, function (arg1, arg2, callback) {
+  // Write code here that turns the phrase above into concrete actions
+  callback.pending();
+});
+
+this.Then(/^I should be authenticated$/, function (callback) {
+  // Write code here that turns the phrase above into concrete actions
+  callback.pending();
+});
+
+this.Given(/^My account is not confirmed$/, function (callback) {
+  // Write code here that turns the phrase above into concrete actions
+  callback.pending();
+});
+
+this.Then(/^My authentication should be revoked$/, function (callback) {
+  // Write code here that turns the phrase above into concrete actions
+  callback.pending();
+});
+
+this.Then(/^I should be reminded to confirm my account$/, function (callback) {
+  // Write code here that turns the phrase above into concrete actions
+  callback.pending();
+});
+
+this.Then(/^I should be warned my username or email is not valid$/, function (callback) {
+  // Write code here that turns the phrase above into concrete actions
+  callback.pending();
+});
+

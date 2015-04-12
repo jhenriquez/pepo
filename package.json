@@ -17,6 +17,8 @@
   },
   "license": "MIT",
   "dependencies": {
+    "concat-stream": "^1.4.8",
+    "duplexer": "^0.1.1",
     "through": "^2.3.7"
   },
   "devDependencies": {

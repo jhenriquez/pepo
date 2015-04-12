@@ -1,9 +1,27 @@
 #!/usr/bin/env node
 
 var through = require('through'),
+    concat  = require('concat-stream'),
+    duplex  = require('duplexer'),
     pepo    = require('../lib/pepo');
+
+function Through(fn) {
+  return through(function () {
+    this.queue(fn.apply(fn, Array.prototype.slice.call(arguments)));
+  });
+}
+
+function waitForAll(input) {
+    var removeEscapeCodes = Through(pepo.removeEscapeCodes);
+
+    removeEscapeCodes
+    .pipe(Through(pepo.extractSteps)) 
+    .pipe(Through(pepo.addCommonJSCeremony))
+    .pipe(process.stdout);
+
+    removeEscapeCodes.write(input);
+}
 
 process
   .stdin
-  .pipe(through(pepo.removeANSIFormatting))
-  .pipe(process.stdout);
+  .pipe(concat(waitForAll));
