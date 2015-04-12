@@ -5,6 +5,5 @@ var through = require('through'),
 
 process
   .stdin
-  .pipe(through(pepo.removeColors))
+  .pipe(through(pepo.removeANSIFormatting))
   .pipe(process.stdout);
-
