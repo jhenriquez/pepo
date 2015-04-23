@@ -1,7 +1,7 @@
 {
   "name": "pepo",
   "version": "0.1.0",
-  "description": "A small tool for removing ANSI color characters from the standard input",
+  "description": "A tool for processing cucumber's steps snippets.",
   "main": "index.js",
   "scripts": {
     "test": "mocha specs/"
