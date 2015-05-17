@@ -17,7 +17,9 @@ process
 
 function Through(fn) {
   return through(function () {
-    this.queue(fn.apply(fn, Array.prototype.slice.call(arguments)));
+    var args = Array.prototype.slice.call(arguments);
+    args.push(options);
+    this.queue(fn.apply(fn, args));
   });
 }
 
