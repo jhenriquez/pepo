@@ -5,6 +5,8 @@ var through = require('through'),
     duplex  = require('duplexer'),
     pepo    = require('../lib/pepo');
     
+var args = process.argv.slice(2);
+
 process
   .stdin
   .pipe(concat(waitForAll));
