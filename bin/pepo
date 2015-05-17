@@ -4,6 +4,10 @@ var through = require('through'),
     concat  = require('concat-stream'),
     duplex  = require('duplexer'),
     pepo    = require('../lib/pepo');
+    
+process
+  .stdin
+  .pipe(concat(waitForAll));
 
 function Through(fn) {
   return through(function () {
@@ -21,7 +25,3 @@ function waitForAll(input) {
 
     removeEscapeCodes.write(input);
 }
-
-process
-  .stdin
-  .pipe(concat(waitForAll));
