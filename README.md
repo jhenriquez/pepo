@@ -6,10 +6,16 @@ Pepo is a very simple tool that helps alleviate this. It reads from the standard
 
 * Removes CSI codes.
 * Extracts the snippets
-* Wraps them in module.exports = function () {...};
+* And *optionaly* wraps them in module.exports = function () {...};
 
 This way you only need to save them into your desired step file:
 
 ```
 cucumber-js | pepo > path/to/your/new/step/file
+```
+
+When adding new steps to an existing file, to avoid wrapping them into a CommonJS export, just add the --no-wrap option.
+
+```
+cucumber-js | pepo --no-wrap
 ```
