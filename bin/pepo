@@ -7,6 +7,10 @@ var through = require('through'),
     
 var args = process.argv.slice(2);
 
+var options = pepo.processArguments(args, {
+  'wrap': true
+});
+
 process
   .stdin
   .pipe(concat(waitForAll));
